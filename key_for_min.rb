@@ -4,6 +4,7 @@ require 'pry'
 
 def key_for_min_value(name_hash)
   lowest = 65535
+  result = ""
   name_hash.each { |name, value|
     result = name if value < lowest
     lowest = value if value < lowest
