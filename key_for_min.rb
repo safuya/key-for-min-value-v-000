@@ -5,9 +5,9 @@ require 'pry'
 def key_for_min_value(name_hash)
   lowest = 65535
   name_hash.each { |name, value|
-    binding.pry
     result = name if value < lowest
     lowest = value if value < lowest
   }
+  binding.pry
   result
 end
